@@ -38,3 +38,14 @@ Variables
     var floatvalue float32
     floatvalue = 100.1
     fmt.Printf("Value of num1 is: %d", num1)
+
+
+Operators
+=========
+
+    Arithmetic      ->  +,-,*,/,%,++,--
+    Relational      ->  <,>,<=,>=,==,!=
+    Logical         ->  &&,||,!
+    Assignment      ->  +=,-=,*=,/=,%=
+    Miscelianeous   ->  &-variable address, *-variable converting poin,
+    Bitwise         ->  

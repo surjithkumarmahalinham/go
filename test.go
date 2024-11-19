@@ -23,4 +23,20 @@ func main() {
 	fmt.Printf("%f\n", y)
 	fmt.Printf("%s\n", name)
 
+	// mixed variable declaration
+
+	var a, b, c = 10, 12, "msksurjith"
+
+	fmt.Printf("%d\n", a)
+	fmt.Printf("%d\n", b)
+	fmt.Printf("%s\n", c)
+
+	// Desicion making statement
+	m := 10
+
+	if m == 5 {
+		fmt.Printf("A is equal to 10")
+	} else {
+		fmt.Printf("A is not equal to 10")
+	}
 }
