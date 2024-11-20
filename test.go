@@ -39,4 +39,16 @@ func main() {
 	} else {
 		fmt.Printf("A is not equal to 10")
 	}
+
+	l := 5
+	n := 7
+	o := 8
+
+	if l > n {
+		if n > o {
+			fmt.Printf("L is Big")
+		} else {
+			fmt.Print("O is Big")
+		}
+	}
 }
