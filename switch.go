@@ -6,6 +6,7 @@ func main() {
 	// fmt.Printf("vale")
 
 	value := 3
+	test := 10
 
 	switch value {
 	case 1:
