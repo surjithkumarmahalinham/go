@@ -17,6 +17,8 @@ func main() {
 		fmt.Printf("Three")
 	case 4:
 		fmt.Printf("Four")
+	case 5:
+		fmt.Printf("Five")
 	}
 
 	for a := 0; a <= 10; a++ {
