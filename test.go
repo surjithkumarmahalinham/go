@@ -43,7 +43,12 @@ func main() {
 	l := 5
 	n := 7
 	o := 8
-
+var data string := "hello"
+var num :=[5]int{10,20,30,40,50}
+	for i:=0;i<5;i++{
+		fmt.Printf("%d\n",num[i])
+	}
+	
 	if l > n {
 		if n > o {
 			fmt.Printf("L is Big \n")
@@ -53,8 +58,15 @@ func main() {
 	}
 	ans := sum(10, 20)
 	fmt.Printf("answer is %d \n", ans)
+	// var news := "welcome"
+	
+	// array value
+
+	
 }
 func sum(a, b int) int {
 	c := a + b
 	return c
+
+	
 }
