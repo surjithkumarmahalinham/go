@@ -37,7 +37,7 @@ func main() {
 	if m == 5 {
 		fmt.Printf("A is equal to 10")
 	} else {
-		fmt.Printf("A is not equal to 10")
+		fmt.Printf("A is not equal to 10 \n")
 	}
 
 	l := 5
@@ -46,13 +46,13 @@ func main() {
 
 	if l > n {
 		if n > o {
-			fmt.Printf("L is Big")
+			fmt.Printf("L is Big \n")
 		} else {
-			fmt.Print("O is Big")
+			fmt.Print("O is Big \n")
 		}
 	}
 	ans := sum(10, 20)
-	fmt.Printf("answer is %d", ans)
+	fmt.Printf("answer is %d \n", ans)
 }
 func sum(a, b int) int {
 	c := a + b
