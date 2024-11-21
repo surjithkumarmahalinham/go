@@ -51,4 +51,10 @@ func main() {
 			fmt.Print("O is Big")
 		}
 	}
+	ans := sum(10, 20)
+	fmt.Printf("answer is %d", ans)
+}
+func sum(a, b int) int {
+	c := a + b
+	return c
 }
