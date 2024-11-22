@@ -53,3 +53,8 @@ Operators
 
     1.Local Variable
     2.Global Variable
+
+Pointers:
+=========
+
+Particular variable oda address storing.
