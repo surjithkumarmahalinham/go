@@ -29,11 +29,11 @@ func main() {
 	fmt.Printf("Book 2 author : %s\n", book2.author)
 	fmt.Printf("Book 2 book_id : %d\n", book2.book_id)
 
-	PrintBook(book1)
+	PrintBook(&book1)
 
-	PrintBook(book2)
+	PrintBook(&book2)
 }
-func PrintBook(book Books) {
+func PrintBook(book *Books) {
 	fmt.Printf("Book 2 title : %s\n", book.title)
 	fmt.Printf("Book 2 author : %s\n", book.author)
 	fmt.Printf("Book 2 book_id : %d\n", book.book_id)
