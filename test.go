@@ -4,37 +4,37 @@ import "fmt"
 
 const max = 3
 
+type Books struct {
+	title   string
+	author  string
+	book_id int
+}
+
 func main() {
-	var a int = 10
-	var ptr *int
-	ptr = &a
-	fmt.Printf("Address of a variable is %d \n", &a)
-	fmt.Printf("Address store in ptr is %x \n", *ptr)
-	fmt.Printf("Address of *ptr %d \n", *ptr)
+	var book1 Books
+	var book2 Books
+	book1.title = "Go"
+	book1.author = "Msksurjith"
+	book1.book_id = 34534534
 
-	var nptr *int
-	fmt.Printf("Null pointer is %x", nptr)
+	book2.title = "React"
+	book2.author = "surjith"
+	book2.book_id = 45654445
 
-	arr := []int{10, 20, 30, 40, 50}
-	var i int
-	var p [max]*int
-	for i = 0; i < max; i++ {
-		p[i] = &arr[i]
-	}
-	for i = 0; i < max; i++ {
-		fmt.Printf("Value of a[%d] = %d \n", i, *p[i])
-	}
+	fmt.Printf("Book 1 title : %s\n", book1.title)
+	fmt.Printf("Book 1 author : %s\n", book1.author)
+	fmt.Printf("Book 1 book_id : %d\n", book1.book_id)
 
-	var x int
-	var ptr1 *int
-	var pptr **int
+	fmt.Printf("Book 2 title : %s\n", book2.title)
+	fmt.Printf("Book 2 author : %s\n", book2.author)
+	fmt.Printf("Book 2 book_id : %d\n", book2.book_id)
 
-	x = 3000
+	PrintBook(book1)
 
-	ptr1 = &x
-	pptr = &ptr1
-
-	fmt.Printf("Value of a = %d\n", x)
-	fmt.Printf("Value available at *ptr = %d\n", *ptr1)
-	fmt.Printf("Value available at **ptr %d\n", **pptr)
+	PrintBook(book2)
+}
+func PrintBook(book Books) {
+	fmt.Printf("Book 2 title : %s\n", book.title)
+	fmt.Printf("Book 2 author : %s\n", book.author)
+	fmt.Printf("Book 2 book_id : %d\n", book.book_id)
 }

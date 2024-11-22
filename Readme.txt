@@ -58,3 +58,9 @@ Pointers:
 =========
 
 Particular variable oda address storing.
+
+
+Structure:
+==========
+
+its a custome datatypes. 
