@@ -35,6 +35,6 @@ func main() {
 }
 func PrintBook(book *Books) {
 	fmt.Printf("Book 2 title : %s\n", book.title)
-	fmt.Printf("Book 2 author : %s\n", book.author)
-	fmt.Printf("Book 2 book_id : %d\n", book.book_id)
+	fmt.Printf("Book 2 author : %s \n", book.author)
+	fmt.Printf("Book 2 book_id : %d \n", book.book_id)
 }
