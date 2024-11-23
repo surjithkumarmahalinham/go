@@ -25,7 +25,7 @@ func main() {
 	fmt.Printf("Book 1 author : %s\n", book1.author)
 	fmt.Printf("Book 1 book_id : %d\n", book1.book_id)
 
-	fmt.Printf("Book 2 title : %s\n", book2.title)
+	// fmt.Printf("Book 2 title : %s\n", book2.title)
 	fmt.Printf("Book 2 author : %s\n", book2.author)
 	fmt.Printf("Book 2 book_id : %d\n", book2.book_id)
 
