@@ -49,8 +49,7 @@ Operators
     Assignment      ->  +=,-=,*=,/=,%=
     Miscelianeous   ->  &-variable address, *-variable converting poin,
     Bitwise         ->  
-
-
+    
     1.Local Variable
     2.Global Variable
 
