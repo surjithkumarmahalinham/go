@@ -6,13 +6,17 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	myHandler := func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Hellow World !")
-	})
+	}
 
-	http.HandleFunc("/cat", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello cat man")
-	})
+	http.HandleFunc("/", myHandler)
+
+	http.HandleFunc("/cat", myCatHandlerFunc)
 
 	http.ListenAndServe(":9000", nil)
+}
+
+func myCatHandlerFunc(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello cat man")
 }
