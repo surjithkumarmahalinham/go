@@ -7,7 +7,7 @@ import (
 
 func main() {
 	myHandler := func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Content-Type", "text/html")
+		w.Header().Set("Content-Type", "text/plain")
 		fmt.Fprintf(w, "<h1>Hellow World !</h1>")
 	}
 
