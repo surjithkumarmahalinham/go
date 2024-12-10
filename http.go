@@ -1,14 +1,22 @@
 package main
 
 import (
-	"fmt"
+	"html/template"
 	"net/http"
 )
 
+type pageData struct {
+	Name    string
+	Age     int
+	Address string
+}
+
 func main() {
 	myHandler := func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Content-Type", "text/plain")
-		fmt.Fprintf(w, "<h1>Hellow World !</h1>")
+		t, _ := template.ParseFiles("template.html")
+		p := pageData{Name: "msk", Age: 27, Address: "IsLand"}
+		// data := "Hello html template first"
+		t.Execute(w, p)
 	}
 
 	http.HandleFunc("/", myHandler)
