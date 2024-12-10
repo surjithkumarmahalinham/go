@@ -9,7 +9,6 @@ func main() {
 	myHandler := func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Hellow World !")
 	}
-
 	http.HandleFunc("/", myHandler)
 
 	http.HandleFunc("/cat", myCatHandlerFunc)
