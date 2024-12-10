@@ -19,6 +19,6 @@ func main() {
 }
 
 func myCatHandlerFunc(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello cat man")
+	http.ServeFile(w, r, "cat.html")
 
 }
