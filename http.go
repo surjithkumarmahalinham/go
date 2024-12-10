@@ -7,7 +7,8 @@ import (
 
 func main() {
 	myHandler := func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hellow World !")
+
+		fmt.Fprintf(w, "<h1>Hellow World !</h1>")
 	}
 
 	http.HandleFunc("/", myHandler)
